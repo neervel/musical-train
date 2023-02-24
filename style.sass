@@ -1,0 +1,308 @@
+$accent: #D6B5A8
+$active: #7D618F
+$white: #ffffff
+$black: #303030
+  
+*
+  box-sizing: border-box
+
+body, h2, h3, p
+  margin: 0
+
+main 
+  overflow: hidden
+
+.slider
+  position: relative
+  font-family: 'Inter', sans-serif
+  padding: 90px 0
+  background-color: $white
+  color: $black
+  
+  &-block
+    max-width: 1083px
+    margin: 0 auto
+    transform: translateX(-20px)
+
+  &-slide 
+    height: 433px
+  
+  &__title
+    font-size: 46px
+    line-height: 50px
+    margin-bottom: 65px
+    color: $black
+  
+  &-content
+    display: flex
+    justify-content: space-between
+
+  &-section 
+    &.left 
+      width: 576px
+      height: 318px
+    &.right
+      width: 432px
+      height: auto
+      padding-top: 25px
+
+    &__title
+      font-size: 24px
+      margin-bottom: 7px
+    &__text
+      font-size: 18px
+      line-height: 1.2
+      margin-bottom: 33px
+    &__author
+      font-size: 14px
+      line-height: 18px
+      opacity: .8
+    &__show-author
+      display: none
+      font-size: 14px
+      line-height: 18px
+      opacity: .8
+      text-decoration: underline
+      text-underline-offset: 3px
+
+  &-video
+    position: relative
+    height: 100%
+    width: 100%
+    cursor: pointer
+
+    &:after 
+      content: ''
+      position: absolute
+      left: 15px
+      top: -15px
+      height: 100%
+      width: 100%
+      border: 1px solid $accent
+      border-radius: 20px
+      z-index: -1
+
+    &__img 
+      max-width: 100%
+      height: auto
+      border-radius: 20px
+
+    &:hover &__btn
+      transform: translate(-50%, -50%) scale(1.1)
+
+    &__btn 
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%) scale(1)
+      transition: .2s
+      height: 75px
+      width: 65px
+      display: flex
+      align-items: center
+      justify-content: center
+      border: none
+      background: none
+      cursor: pointer
+      padding: 0
+
+      &:active
+        outline: none
+
+      & svg 
+        height: 100%
+        width: 100%
+
+  &-navigation
+    position: relative
+    z-index: 9 
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 14px
+    width: 579px
+    margin-top: 20px
+
+    &__pagination
+      opacity: .8
+      margin: 0 21px
+      display: flex
+
+    &__total
+      color: $active 
+
+    &__btn
+      height: 60px
+      width: 60px
+      cursor: pointer
+      display: flex
+
+      &:hover svg 
+        stroke: $active
+
+      & svg 
+        height: 100%
+        width: 100px
+        stroke: $accent 
+        transition: .2s
+
+  &-leaf 
+    position: absolute
+    &.top
+      top: -41px
+      right: -34px
+      height: 132px
+      width: 132px
+    &.mid
+      top: 126px
+      right: 85px
+      height: 124px
+      width: 124px
+    &.bot
+      right: 32px
+      bottom: 26px
+      height: 89px
+      width: 132px
+    & img 
+      height: 100%
+      width: 100%
+
+
+
+  @media (max-width: 1439px)
+    &-block
+      width: 984px
+      transform: none
+
+    &-slide
+      height: 339px
+    
+    &__title
+      font-size: 42px
+      margin-bottom: 42px
+    
+    &-section
+      &.left
+        width: 448px
+        height: 247px
+      &.right
+        width: 484px
+        padding-top: 20px
+      &__title
+        max-width: 435px
+      &__text, &__author
+        max-width: 424px
+
+    &-video 
+      &:after 
+        left: 12px
+        top: -12px
+      &__btn 
+        height: 58px
+        width: 50px
+    &-navigation 
+      width: 460px
+
+    &-leaf 
+      &.top
+        top: -35px
+        right: -37px
+        height: 109px
+        width: 109px
+      &.mid
+        top: 90px
+        right: 58px
+        height: 93px
+        width: 93px
+      &.bot
+        right: 8px
+        bottom: 26px
+        height: 80px
+        width: 119px
+  @media (max-width: 1023px)
+    padding: 40px 0
+    &-block
+      width: 100%
+      padding: 0 20px
+
+    &-section
+      &.left
+        width: calc(100% - 20px)
+        height: auto
+      &.right
+        padding-top: 0
+        width: 100%
+      &__title
+        font-size: 20px
+        margin-bottom: 10px
+      &__text
+        font-size: 15px
+        margin-bottom: 10px
+
+      &__title, &__text, &__author
+        max-width: 100%
+
+      &__author
+        font-size: 12px
+        &.hidden
+          display: none
+      &__show-author
+        display: block
+        font-size: 12px
+        &.hidden
+          display: none
+
+    &-video 
+      margin-top: 36px
+      margin-right: 19px
+      &:after 
+        left: 19px
+        top: -19px
+      &__btn 
+        height: 92px
+        width: 79px
+
+    &-slide 
+      height: auto
+    &-content 
+      flex-direction: column-reverse
+
+    &__title
+      font-size: 30px
+      margin-bottom: 40px
+
+    &-navigation 
+      width: 100%
+      &__btn 
+        height: 50px
+        width: 50px
+
+    &-leaf 
+      &.top
+        top: -20px
+        right: 15px
+        height: 70px
+        width: 70px
+      &.mid
+        display: none
+      &.bot
+        right: 20px
+        bottom: 5px
+        height: 44px
+        width: 89px
+
+  @media (max-width: 767px)
+    &-video 
+      &__btn 
+        height: 35px
+        width: 30px
+    &-leaf 
+      &.top
+        top: -10px
+        right: -5px
+        height: 41px
+        width: 41px
+      &.bot
+        right: 10px
+        height: 36px
+        width: 70px

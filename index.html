@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main>
+    <div class="slider">
+      <div class="slider-leaf top">
+        <img src="./assets/leaf-1.png">
+      </div>
+      <div class="slider-leaf mid">
+        <img src="./assets/leaf-2.png">
+      </div>
+      <div class="slider-leaf bot">
+        <img src="./assets/leaf-3.png">
+      </div>
+  
+      <div class="slider-block swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider-slide">
+            <h2 class="slider__title">Клинический пример</h2>
+            <div class="slider-content">
+              <div class="slider-section left">
+                <div class="slider-video">
+                  <img src="./assets/cover-1.jpg" alt="Клинический пример" class="slider-video__img">
+                  <button class="slider-video__btn">
+                    <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 66.0255V4.87698C0 1.80922 3.31108 -0.116666 5.97766 1.40008L58.9731 31.5437C61.6506 33.0667 61.6741 36.9176 59.0153 38.4732L6.0199 69.4781C3.3533 71.0382 0 69.115 0 66.0255Z" fill="#F0CFBF"/>
+                    </svg>                                   
+                  </button>
+                </div>
+              </div>
+              <div class="slider-section right">
+                <h3 class="slider-section__title">Разбор клинического случая: тревожное расстройство у женщин</h3>
+                <p class="slider-section__text">Клинический разбор пациентки: 54 года с жалобами на «тряску», приливы, увеличение массы тела, проблемы с дыханием, плохой сон.</p>
+                <p class="slider-section__show-author js-show-a hidden">Об авторе видео</p>
+                <p class="slider-section__author js-hide-a">Котова Ольга Владимировна, к.м.н., невролог, психиатр, психотерапевт, доцент Кафедры психиатрии, психотерапии и психосоматической патологии ФНМО медицинского института РУДН, вице-президент международного общества.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider-slide">
+            <h2 class="slider__title">Клинический пример</h2>
+            <div class="slider-content">
+              <div class="slider-section left">
+                <div class="slider-video">
+                  <img src="./assets/cover-2.jpg" alt="Клинический пример" class="slider-video__img">
+                  <button class="slider-video__btn">
+                    <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 66.0255V4.87698C0 1.80922 3.31108 -0.116666 5.97766 1.40008L58.9731 31.5437C61.6506 33.0667 61.6741 36.9176 59.0153 38.4732L6.0199 69.4781C3.3533 71.0382 0 69.115 0 66.0255Z" fill="#F0CFBF"/>
+                    </svg>                                   
+                  </button>
+                </div>
+              </div>
+              <div class="slider-section right">
+                <h3 class="slider-section__title">Разбор клинического случая: последствия COVID</h3>
+                <p class="slider-section__text">Клинический разбор пациентки: 54 года с жалобами на «тряску», приливы, увеличение массы тела, проблемы с дыханием, плохой сон.</p>
+                <p class="slider-section__show-author js-show-a hidden">Об авторе видео</p>
+                <p class="slider-section__author js-hide-a">Котова Ольга Владимировна, к.м.н., невролог, психиатр, психотерапевт, доцент Кафедры психиатрии, психотерапии и психосоматической патологии ФНМО медицинского института РУДН, вице-президент международного общества.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider-slide">
+            <h2 class="slider__title">Клинический пример</h2>
+            <div class="slider-content">
+              <div class="slider-section left">
+                <div class="slider-video">
+                  <img src="./assets/cover-3.jpg" alt="Клинический пример" class="slider-video__img">
+                  <button class="slider-video__btn">
+                    <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 66.0255V4.87698C0 1.80922 3.31108 -0.116666 5.97766 1.40008L58.9731 31.5437C61.6506 33.0667 61.6741 36.9176 59.0153 38.4732L6.0199 69.4781C3.3533 71.0382 0 69.115 0 66.0255Z" fill="#F0CFBF"/>
+                    </svg>                                   
+                  </button>
+                </div>
+              </div>
+              <div class="slider-section right">
+                <h3 class="slider-section__title">Разбор клинического случая: неврологические последствия COVID</h3>
+                <p class="slider-section__text">Клинический разбор пациентки: 54 года с жалобами на «тряску», приливы, увеличение массы тела, проблемы с дыханием, плохой сон.</p>
+                <p class="slider-section__show-author js-show-a hidden">Об авторе видео</p>
+                <p class="slider-section__author js-hide-a">Котова Ольга Владимировна, к.м.н., невролог, психиатр, психотерапевт, доцент Кафедры психиатрии, психотерапии и психосоматической патологии ФНМО медицинского института РУДН, вице-президент международного общества.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider-slide">
+            <h2 class="slider__title">Лекция</h2>
+            <div class="slider-content">
+              <div class="slider-section left">
+                <div class="slider-video">
+                  <img src="./assets/cover-4.jpg" alt="Клинический пример" class="slider-video__img">
+                  <button class="slider-video__btn">
+                    <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 66.0255V4.87698C0 1.80922 3.31108 -0.116666 5.97766 1.40008L58.9731 31.5437C61.6506 33.0667 61.6741 36.9176 59.0153 38.4732L6.0199 69.4781C3.3533 71.0382 0 69.115 0 66.0255Z" fill="#F0CFBF"/>
+                    </svg>                                   
+                  </button>
+                </div>
+              </div>
+              <div class="slider-section right">
+                <h3 class="slider-section__title">Посттравматическое стрессовое расстройство в центре международных исследований: от «солдатского сердца» к МКБ-11</h3>
+                <p class="slider-section__text">Клинический разбор пациентки: 54 года с жалобами на «тряску», приливы, увеличение массы тела, проблемы с дыханием, плохой сон.</p>
+                <p class="slider-section__show-author js-show-a hidden">Об авторе видео</p>
+                <p class="slider-section__author js-hide-a">Котова Ольга Владимировна, к.м.н., невролог, психиатр, психотерапевт, доцент Кафедры психиатрии, психотерапии и психосоматической патологии ФНМО медицинского института РУДН, вице-президент международного общества.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider-slide">
+            <h2 class="slider__title">Клинический пример</h2>
+            <div class="slider-content">
+              <div class="slider-section left">
+                <div class="slider-video">
+                  <img src="./assets/cover-5.jpg" alt="Клинический пример" class="slider-video__img">
+                  <button class="slider-video__btn">
+                    <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 66.0255V4.87698C0 1.80922 3.31108 -0.116666 5.97766 1.40008L58.9731 31.5437C61.6506 33.0667 61.6741 36.9176 59.0153 38.4732L6.0199 69.4781C3.3533 71.0382 0 69.115 0 66.0255Z" fill="#F0CFBF"/>
+                    </svg>                                   
+                  </button>
+                </div>
+              </div>
+              <div class="slider-section right">
+                <h3 class="slider-section__title">Разбор клинического случая: острая тревога/ПТСР</h3>
+                <p class="slider-section__text">Клинический разбор пациентки: 54 года с жалобами на «тряску», приливы, увеличение массы тела, проблемы с дыханием, плохой сон.</p>
+                <p class="slider-section__show-author js-show-a hidden">Об авторе видео</p>
+                <p class="slider-section__author js-hide-a">Котова Ольга Владимировна, к.м.н., невролог, психиатр, психотерапевт, доцент Кафедры психиатрии, психотерапии и психосоматической патологии ФНМО медицинского института РУДН, вице-президент международного общества.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider-slide">
+            <h2 class="slider__title">Клинический пример</h2>
+            <div class="slider-content">
+              <div class="slider-section left">
+                <div class="slider-video">
+                  <img src="./assets/cover-6.jpg" alt="Клинический пример" class="slider-video__img">
+                  <button class="slider-video__btn">
+                    <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 66.0255V4.87698C0 1.80922 3.31108 -0.116666 5.97766 1.40008L58.9731 31.5437C61.6506 33.0667 61.6741 36.9176 59.0153 38.4732L6.0199 69.4781C3.3533 71.0382 0 69.115 0 66.0255Z" fill="#F0CFBF"/>
+                    </svg>                                   
+                  </button>
+                </div>
+              </div>
+              <div class="slider-section right">
+                <h3 class="slider-section__title">Разбор клинического случая: постоянная усталость</h3>
+                <p class="slider-section__text">Клинический разбор пациентки: 54 года с жалобами на «тряску», приливы, увеличение массы тела, проблемы с дыханием, плохой сон.</p>
+                <p class="slider-section__show-author js-show-a hidden">Об авторе видео</p>
+                <p class="slider-section__author js-hide-a">Котова Ольга Владимировна, к.м.н., невролог, психиатр, психотерапевт, доцент Кафедры психиатрии, психотерапии и психосоматической патологии ФНМО медицинского института РУДН, вице-президент международного общества.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-navigation">
+          <div class="slider-navigation__btn js-slider-prev">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.9983 0.80912C13.8776 0.80912 0.80912 13.8776 0.80912 29.9983C0.80912 46.1191 13.8776 59.1875 29.9983 59.1875C46.1191 59.1875 59.1875 46.1191 59.1875 29.9983C59.1875 13.8776 46.1191 0.80912 29.9983 0.80912Z" stroke-width="2"/>
+              <path d="M32.4379 22.7031L25.1406 30.4058L32.4379 38.1085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>        
+          </div>
+          <div class="slider-navigation__pagination">
+            <span class="slider-navigation__active js-slider-current">1</span>
+            <span class="slider-navigation__div">/</span>
+            <span  class="slider-navigation__total">6</span>
+          </div>
+          <div class="slider-navigation__btn js-slider-next">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30.0017 59.1909C46.1224 59.1909 59.1909 46.1224 59.1909 30.0017C59.1909 13.8809 46.1224 0.8125 30.0017 0.8125C13.8809 0.8125 0.8125 13.8809 0.8125 30.0017C0.8125 46.1224 13.8809 59.1909 30.0017 59.1909Z" stroke-width="2"/>
+              <path d="M27.5621 37.2969L34.8594 29.5942L27.5621 21.8915" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
