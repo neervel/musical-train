@@ -32,7 +32,7 @@
             <h2 class="slider__title">Клинический пример</h2>
             <div class="slider-content">
               <div class="slider-section left">
-                <div class="slider-video">
+                <div class="slider-video js-video" data-video="https://www.youtube.com/embed/GpcaJQ40q1Y">
                   <img src="./assets/cover-1.jpg" alt="Клинический пример" class="slider-video__img">
                   <button class="slider-video__btn">
                     <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@
             <h2 class="slider__title">Клинический пример</h2>
             <div class="slider-content">
               <div class="slider-section left">
-                <div class="slider-video">
+                <div class="slider-video js-video" data-video="https://www.youtube.com/embed/GpcaJQ40q1Y">
                   <img src="./assets/cover-2.jpg" alt="Клинический пример" class="slider-video__img">
                   <button class="slider-video__btn">
                     <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +74,7 @@
             <h2 class="slider__title">Клинический пример</h2>
             <div class="slider-content">
               <div class="slider-section left">
-                <div class="slider-video">
+                <div class="slider-video js-video" data-video="https://www.youtube.com/embed/GpcaJQ40q1Y">
                   <img src="./assets/cover-3.jpg" alt="Клинический пример" class="slider-video__img">
                   <button class="slider-video__btn">
                     <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +95,7 @@
             <h2 class="slider__title">Лекция</h2>
             <div class="slider-content">
               <div class="slider-section left">
-                <div class="slider-video">
+                <div class="slider-video js-video" data-video="https://www.youtube.com/embed/GpcaJQ40q1Y">
                   <img src="./assets/cover-4.jpg" alt="Клинический пример" class="slider-video__img">
                   <button class="slider-video__btn">
                     <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,7 +116,7 @@
             <h2 class="slider__title">Клинический пример</h2>
             <div class="slider-content">
               <div class="slider-section left">
-                <div class="slider-video">
+                <div class="slider-video js-video" data-video="https://www.youtube.com/embed/GpcaJQ40q1Y">
                   <img src="./assets/cover-5.jpg" alt="Клинический пример" class="slider-video__img">
                   <button class="slider-video__btn">
                     <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +137,7 @@
             <h2 class="slider__title">Клинический пример</h2>
             <div class="slider-content">
               <div class="slider-section left">
-                <div class="slider-video">
+                <div class="slider-video js-video" data-video="https://www.youtube.com/embed/GpcaJQ40q1Y">
                   <img src="./assets/cover-6.jpg" alt="Клинический пример" class="slider-video__img">
                   <button class="slider-video__btn">
                     <svg width="61" height="71" viewBox="0 0 61 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -177,6 +177,12 @@
       </div>
     </div>
   </main>
+
+  <div class="slider-video-popup hidden">
+		<div class="slider-video-popup-block">
+			<iframe id="video-frame" src="" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+		</div>
+	</div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./index.js"></script>

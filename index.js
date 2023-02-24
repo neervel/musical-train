@@ -41,3 +41,20 @@ hideauthor.forEach(el => {
     el.previousElementSibling.classList.remove('hidden')
   })
 })
+
+const videoPopup = document.querySelector('.slider-video-popup')
+const videoPopupIframe = document.querySelector('#video-frame')
+const video = document.querySelectorAll('.js-video')
+
+video.forEach((el, i) => {
+  el.addEventListener('click', () => {
+    const link = el.getAttribute('data-video') + '?controls=0&autoplay=1'
+    videoPopup.classList.remove('hidden')
+    videoPopupIframe.src = link
+  })
+})
+
+videoPopup.addEventListener('click', e => {
+  videoPopup.classList.add('hidden')
+  videoPopupIframe.src = ''
+})
